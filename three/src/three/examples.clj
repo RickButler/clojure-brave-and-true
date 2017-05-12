@@ -139,19 +139,8 @@ error-message
 ;get in will allow you to access nested values in the map with a vector
 (get-in {:a 0 :b {:c "ho hum"}} [:b :c])
 
+;the map can act as a function
+({:name "The Human Coffeepot"} :name)
+
 (vector? [1 2])
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
+(keyword? :test)
